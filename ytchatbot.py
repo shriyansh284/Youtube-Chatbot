@@ -37,7 +37,7 @@ video_id = st.text_input("Enter YouTube Video ID:", placeholder="e.g. LPZh9BOjkQ
 if video_id:
     try:
         api = YouTubeTranscriptApi()
-        transcript_list = api.fetch(video_id, languages=["en"])
+        transcript_list = YouTubeTranscriptApi().fetch(video_id, languages=["en"])
         transcript = " ".join([getattr(t, "text", "") for t in transcript_list])
 
         st.success("✅ Transcript fetched successfully!")
@@ -85,3 +85,4 @@ if video_id:
             with st.expander("📜 Relevant transcript sections"):
                 for doc in result["source_documents"]:
                     st.write(doc.page_content)
+
