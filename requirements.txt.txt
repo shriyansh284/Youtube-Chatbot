@@ -22,7 +22,7 @@ numpy>=1.26.0
 pandas>=2.2.0
 requests>=2.32.0
 
-# Optional (smoother experience on deployment)
+# Optional
 tiktoken>=0.7.0
 httpx>=0.27.0
 tenacity>=8.3.0
