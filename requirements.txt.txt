@@ -15,7 +15,8 @@ sentence-transformers>=3.1.0
 huggingface-hub>=0.24.0
 
 # YouTube transcript
-youtube-transcript-api>=0.6.2
+youtube-transcript-api==0.6.2
+
 
 # Data utilities
 numpy>=1.26.0
@@ -26,3 +27,4 @@ requests>=2.32.0
 tiktoken>=0.7.0
 httpx>=0.27.0
 tenacity>=8.3.0
+
